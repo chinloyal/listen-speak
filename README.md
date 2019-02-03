@@ -1,4 +1,6 @@
-# Java-Google-Text-To-Speech
+# Listen Speak
+
+Google Text to Speech and Speech to Text API for Java Apps
 
 
 ## --Maven Build--
@@ -9,4 +11,6 @@
 
 ### Maven Clean Package [ No Javadocs produced ]
 
-`mvn -Dmaven.javadoc.skip=true clean package``
+`mvn -Dmaven.javadoc.skip=true clean package`
+
+More instructions will be included soon
