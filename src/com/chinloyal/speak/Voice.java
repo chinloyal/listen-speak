@@ -1,6 +1,8 @@
 package com.chinloyal.speak;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -17,6 +19,8 @@ public abstract class Voice {
 	private SynthesiserV2 synthesizer;
 	private AdvancedPlayer player;
 	protected static boolean mute = false;
+	
+	private List<Speakable> listeners = new ArrayList<>();
 	
 	public Voice(String google_api_key) {
 		synthesizer = new SynthesiserV2(google_api_key);
@@ -40,7 +44,17 @@ public abstract class Voice {
 				public Integer call() throws IOException, JavaLayerException {
 					//Create a JLayer instance
 					player = new AdvancedPlayer(synthesizer.getMP3Data(text));
+					
+					for(Speakable listener : listeners) {
+						listener.onSpeakStart();
+					}
+					
 					player.play();
+					
+					for(Speakable listener : listeners) {
+						listener.onSpeakEnd();
+					}
+					
 					return 0;
 				}
 			};
@@ -62,6 +76,14 @@ public abstract class Voice {
 
 	public AdvancedPlayer getPlayer() {
 		return player;
+	}
+	
+	public void setLanguage(String language) {
+		synthesizer.setLanguage(language);
+	}
+	
+	public void addSpeakListener(Speakable listener) {
+		listeners.add(listener);
 	}
 	
 	/**

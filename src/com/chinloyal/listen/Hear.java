@@ -19,7 +19,7 @@ public abstract class Hear {
 	private File audioFile;
 	private int recordTime;
 	
-	private List<Hearable> listeners = new ArrayList<Hearable>();
+	private List<Hearable> listeners = new ArrayList<>();
 	
 	public Hear(String google_api_key) {
 		duplex = new GSpeechDuplex(google_api_key);//Initialize Google API
@@ -93,8 +93,6 @@ public abstract class Hear {
 				processed = gResponse.getResponse();
 			}
 		}
-		
-			
 		
 		for(Hearable listener : listeners) {
 			listener.onRespond(processed);
