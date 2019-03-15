@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry including="**/*.java" kind="src" path="src"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
-	<classpathentry kind="var" path="M2_REPO/com/github/goxr3plus/java-google-speech-api/V2.1/java-google-speech-api-V2.1.jar" sourcepath="M2_REPO/com/github/goxr3plus/java-google-speech-api/V2.1/java-google-speech-api-V2.1-sources.jar"/>
-	<classpathentry kind="var" path="M2_REPO/com/github/axet/java-flac-encoder/0.3.8/java-flac-encoder-0.3.8.jar" sourcepath="M2_REPO/com/github/axet/java-flac-encoder/0.3.8/java-flac-encoder-0.3.8-sources.jar"/>
-	<classpathentry kind="var" path="M2_REPO/org/json/json/20150729/json-20150729.jar" sourcepath="M2_REPO/org/json/json/20150729/json-20150729-sources.jar"/>
-	<classpathentry kind="var" path="M2_REPO/com/googlecode/soundlibs/jlayer/1.0.1-1/jlayer-1.0.1-1.jar" sourcepath="M2_REPO/com/googlecode/soundlibs/jlayer/1.0.1-1/jlayer-1.0.1-1-sources.jar"/>
-	<classpathentry kind="var" path="M2_REPO/junit/junit/3.8.2/junit-3.8.2.jar" sourcepath="M2_REPO/junit/junit/3.8.2/junit-3.8.2-sources.jar"/>
-	<classpathentry kind="lib" path="/APGroupProject/lib/listen-speak-api.jar"/>
-	<classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="src" path="src" including="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+  <classpathentry kind="var" path="M2_REPO/com/github/goxr3plus/java-google-speech-api/V2.1/java-google-speech-api-V2.1.jar" sourcepath="M2_REPO/com/github/goxr3plus/java-google-speech-api/V2.1/java-google-speech-api-V2.1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/github/axet/java-flac-encoder/0.3.8/java-flac-encoder-0.3.8.jar" sourcepath="M2_REPO/com/github/axet/java-flac-encoder/0.3.8/java-flac-encoder-0.3.8-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/json/json/20150729/json-20150729.jar" sourcepath="M2_REPO/org/json/json/20150729/json-20150729-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/googlecode/soundlibs/jlayer/1.0.1-1/jlayer-1.0.1-1.jar" sourcepath="M2_REPO/com/googlecode/soundlibs/jlayer/1.0.1-1/jlayer-1.0.1-1-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/junit/junit/3.8.2/junit-3.8.2.jar" sourcepath="M2_REPO/junit/junit/3.8.2/junit-3.8.2-sources.jar"/>
 </classpath>
